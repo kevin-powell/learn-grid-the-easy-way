@@ -192,7 +192,7 @@ h3 {
   }
 }
 
-@media screen and (min-width: 38rem) {
+@media screen and (min-width: 38em) {
   .testimonial-grid {
     grid-template-areas:
      'one one'
@@ -202,7 +202,7 @@ h3 {
   }
 }
 
-@media screen and (min-width: 54rem) {
+@media screen and (min-width: 54em) {
   .testimonial-grid {
       grid-template-areas:
       "one one two"
@@ -211,7 +211,7 @@ h3 {
   }
 }
 
-@media screen and (min-width: 75rem) {
+@media screen and (min-width: 75em) {
   .testimonial-grid {
       grid-template-areas:
       "one one two five"
