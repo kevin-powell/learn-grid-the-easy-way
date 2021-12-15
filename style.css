@@ -182,24 +182,42 @@ h3 {
   grid-area: five;
 }
 
-@media (min-width: 30em) {
+@media screen and (min-width: 33em) {
+  .testimonial-grid {
+      grid-template-areas:
+      "one one"
+      "two three"
+      "five five"
+      "four four";
+  }
+}
+
+@media screen and (min-width: 38em) {
   .testimonial-grid {
     grid-template-areas:
      'one one'
      'two five'
      'three five'
-     'four four'
+     'four four';
   }
 }
 
-@media (min-width: 50em) {
+@media screen and (min-width: 54em) {
   .testimonial-grid {
-    grid-template-areas:
-     'one one two five'
-     'three four four five'
+      grid-template-areas:
+      "one one two"
+      "five five five"
+      "three four four";
   }
 }
 
+@media screen and (min-width: 75em) {
+  .testimonial-grid {
+      grid-template-areas:
+      "one one two five"
+      "three four four five";
+  }
+}
 
 
 .testimonial.quote {
