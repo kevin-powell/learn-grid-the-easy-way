@@ -215,7 +215,7 @@ h3 {
   .testimonial-grid {
       grid-template-areas:
       "one one two five"
-      "three four four five";
+      "three four four  ";
   }
 }
 

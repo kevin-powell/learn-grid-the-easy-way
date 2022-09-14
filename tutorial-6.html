@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Using CSS Grid</title>
+	<style>
+		body{
+			color: #fff;
+			font-family: 'Nunito Semibold';
+			text-align: center;
+		}
+		#content{
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-auto-rows: minmax(150px, auto);
+			grid-gap: 10px;
+			max-width: 960px;
+			margin: 0 auto;
+			/*align-items: start;*/
+			/*justify-items: start;*/
+		}
+		#content div{
+			background: #3bbced;
+			padding: 30px;
+			/*justify-self: start;*/
+			/*align-self: start;*/
+		}
+		#content div:nth-child(even){
+			background: #777;
+			padding: 30px;
+		}
+		.one{
+			align-self: end;
+			justify-self: start;
+		}
+		.two{
+			align-self: center;
+			justify-self: center;
+		}
+		.three{
+			align-self: start;
+			justify-self: end;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="content">
+
+		<div class="one">1 with content</div>
+		<div class="two">2</div>
+		<div class="three">3</div>
+		<div class="four">4</div>
+		<div class="five">5</div>
+		<div class="six">6</div>
+
+	</div>
+
+</body>
+</html>
